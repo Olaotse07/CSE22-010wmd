@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  padding: 10px;
+  position: sticky; /* Change from 'fixed' to 'sticky' */
+  top: 0; /* New */
+  z-index: 1000;
+}
+
+.logo-image {
+  height: 50px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.navbar a:hover,
+.navbar a.home-active {
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px){
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero-section {
+  background-image: url('images/lurther\ the\ fallen.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  max-height: 75%;
+ 
+}
+
+.hero-content {
+  position: relative;
+
+  
+
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* New */
+  animation: fadeIn 2s ease-in-out; /* New */
+}
+
+.hero-content h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* New */
+  animation: fadeIn 2s ease-in-out 1s; /* New */
+}
+
+@keyframes fadeIn { /* New */
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cta-buttons .cta-button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #000;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease-out;
+   max-width: 60%;
+  margin: auto;
+}
+
+.cta-button:hover {
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #ffffff;
+}
+
+
+
+
+/*featured-content*/
+.featured-content{
+  background: #101010;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.title h1{
+  color: white;
+  text-align: center;
+  font-size: 54px;
+  
+}
+.title h2{
+  color: white;
+  font-size: 15px;
+  width: 1120px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card{
+  height: auto;
+  width: 30vw;
+  padding: 20px 30px;
+  background: white;
+  border-radius: 20px;
+  margin: 0.9375rem;
+  position: relative;
+  overflow:hidden ;
+  text-align: center;
+}
+
+.card i{
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: #000;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+  max-height: 60%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.card h3{
+  margin-bottom: 2px;
+  
+}
+.card h5{
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+
+.pra p{
+  font-size: 15px;
+  line-height: 27px;
+  margin-bottom: 25px;
+  
+}
+
+.pra .description{
+  padding-top: 5px;
+  border-top: 2px solid #000;
+  border-radius: 6px;
+}
+
+.card .button{
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.card .button:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+/*Footer section */
+
+.footer{
+ 
+  width: 100%;
+  background: #111;
+  margin-top: 100px;
+}
+
+.footer-content{
+  display: flex;
+  background: #000;
+  color: #fff;
+}
+
+.footer-content .footer-box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.footer-box .text{
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.footer-box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-box .content{
+  margin: 20px 0 0 0;
+}
+
+.left .content .socials{
+  margin: 20px 0 0 0;
+}
+
+
+.left .content .socials a{
+  color: #fff !important;
+  padding: 0 20px;
+}
+
+
+
+.left .content .socials a i{
+  height: 45px;
+  width: 45px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  transition: color 0.3s ease,transform 0.3s ease;
+}
+
+.left .content .socials a i:hover{
+  
+  transform: scale(1.3);
+}
+
+.center .content .place span i,
+.center .content .phone span i,
+.center .content .email span i {
+  margin-right: 10px; 
+}
+
+.center .content .place,
+.center .content .phone {
+  margin-bottom: 10px; /* Adjust this value to your desired spacing */
+}
+
+
+.right .content form .email,
+.right .content form .msg {
+  margin-bottom: 15px;
+}
+
+.right .content form input[type="text"],
+.right .content form textarea {
+  width: 47%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.right .content form .sub-btn button{
+  padding:  10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.right .content form .sub-btn button:hover {
+  background-color: #fff;
+  color: #000 ;
+  transform: scale(1.0);
+}
+
+/*Movies */
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-tile {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  text-align: center;
+  height: 100%; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.movie-tile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-tile h2 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+  width: 100%; 
+  font-size: 0.66rem; /* Adjust font size here */
+  white-space: nowrap;
+}
+
+.movie-info span {
+  margin: 0 2px; /* Adjust margins here */
+}
+
+
+.movie-info .year {
+  border: 1px solid #000;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.movie-info .genre {
+  font-size: 0.7rem; 
+}
+
+.movie-tile:hover {
+  transform: scale(1.05);
+  border-color: #fff;
+  transition: all 0.5s ease;
+}
+
+
+/*TV shows */
+
+.show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.show-tile {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.show-tile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.show-tile h2 {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.show-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+  width: 100%;
+  font-size: 0.6rem;
+  white-space: nowrap;
+}
+
+.show-info span {
+  margin: 0 5px;
+}
+
+.show-info .year {
+  border: 1px solid #000;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.show-tile:hover {
+  transform: scale(1.05);
+  border-color: #fff;
+  transition: all 0.5s ease;
+}
+
+/*Video games section */
+
+.game-section {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.game-section p{
+  margin-bottom: 7px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.game-tile {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.game-tile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game-tile h2 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.game-tile .game-info {
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #f3f3f3;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #666;
+  border-radius: 10%;
+}
+
+/*Mobile Apps section */
+
+.app-section {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.app-section p{
+  margin-bottom: 7px
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.app-tile {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  margin-bottom: 20px; /* adjust as necessary */
+}
+
+
+.app-tile img {
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.app-tile h2 {
+  flex-grow: 0;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.app-tile .app-info {
+  flex-grow: 0;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #f3f3f3;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #666;
+}
+
+.app-tile .section-tag {
+  flex-grow: 0;
+  margin-top: auto;
+  padding: 5px 0;
+}
+
+
+
+
+.app-tile .section-tag span {
+  border: 1px solid #ccc;
+  padding: 2px;
+  font-size: 0.6rem;
+  background-color: #f0f0f0;
+  border-radius: 10%;
+  
+}
+/* Hover Effect combined tiles */
+.game-tile, .app-tile {
+  transition: transform 0.5s ease;
+}
+
+.game-tile:hover, .app-tile:hover {
+  transform: scale(1.05); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

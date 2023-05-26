@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+        .collection-section {
+            
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+    
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .tagline {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    
+        .collection-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .collection-tile {
+            flex: 1 1 200px;
+            border: 1px solid #ddd;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            min-height: 250px; 
+            border-radius: 10px; 
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+            box-sizing: border-box;
+        }
+    
+        .collection-tile img {
+            width: 100%;
+            height: 195px;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+            box-sizing: border-box;
+        }
+    
+        .collection-tile:hover {
+            transform: scale(1.05);
+        }
+    
+        .collection-info {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: auto; /* push the content to the bottom */
+            
+        }
+    
+        .collection-info h2 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">
+          <img src="images/logo.png" alt="Warner Bros logo" class="logo-image">
+        </a>
+        <!--menu-->
+        <nav>
+           <ul class="navbar">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="TVShows.html">TV Shows</a></li>
+            <li><a href="Movies.html" >Movies</a></li>
+            <li><a href="GamesandApps.html" >Games and apps</a></li>
+            <li><a href="Collections.html" class="home-active">Collections</a></li>
+            <li><a href="Aboutus.html">About Warner Bros</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+           </ul>
+        </nav>
+      </header>
+
+    <section class="collection-section">
+        <h1 class="section-title">COLLECTIONS</h1>
+        <p class="tagline">Explore our themed collections of movies and TV shows</p>
+        <div class="collection-grid">
+           
+            <div class="collection-tile">
+                <img src="tvshows/theflashtv.jpg" alt="The Flash movie poster">
+                <div class="collection-info">
+                    <h2>Binge TV</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Judas and the messiah.jpg" alt="Judas and the messiah movie poster">
+                <div class="collection-info">
+                    <h2>Black History</h2>
+                  
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Lucifer.jpg" alt="Lucifer tvshow poster">
+                <div class="collection-info">
+                    <h2>Fan Favourites</h2>
+                  
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/TheBigBangTheory.jpg" alt="TheBigBangTheory tvshow poster">
+                <div class="collection-info">
+                    <h2>Comedy TV</h2>
+                   
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Marylin Monroe.jpg" alt="Marylin Monroe poster">
+                <div class="collection-info">
+                    <h2>90s Romance</h2>
+                  
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/wednesday-wednesday-addams-tv-series-WallpaperMaiden_.png" alt="Wednesday tvshow poster">
+                <div class="collection-info">
+                    <h2>Hottest Picks</h2>
+                   
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="images/creed 3.jpg" alt="Creed 3 movie poster">
+                <div class="collection-info">
+                    <h2>Sports</h2>
+                    
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Tom and Jerry.jpg" alt="Tom and Jerry movie poster">
+                <div class="collection-info">
+                    <h2>Family Time</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Joker.jpg" alt="Joker movie poster">
+                <div class="collection-info">
+                    <h2>Protagonist</h2>
+                    
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="tvshows/Vikings.jpg" alt="Vikings tvshow poster">
+                <div class="collection-info">
+                    <h2>Vikings</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/american-born-chinese.jpg" alt="American born movie poster">
+                <div class="collection-info">
+                    <h2>Asia themed</h2>
+                 
+                </div>
+            </div>
+            
+            <div class="collection-tile">
+                <img src="collections/guardians-of-the-galaxy.jpg " alt ="guardians-of-the-galaxy movie poster">
+                <div class="collection-info">
+                    <h2>Animation</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/margaret-movie.jpg" alt="margaret-movie poster">
+                <div class="collection-info">
+                    <h2>Sit downs</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/oppenheimer.jpg" alt="Oppenheimer poster">
+                <div class="collection-info">
+                    <h2>90s Classics</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Stranger things.jpg" alt="Stranger things tv show poster">
+                <div class="collection-info">
+                    <h2>Supernatural</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/little-mermaid-movie.jpg" alt="little-mermaid-movie poster">
+                <div class="collection-info">
+                    <h2>Popular</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Succesion.jpg" alt="Succesion tvshow poster">
+                <div class="collection-info">
+                    <h2>Suits and Ties</h2>
+                 
+                </div>
+            </div>
+
+            <div class="collection-tile">
+                <img src="collections/Blacklove.jpg" alt="Black Love tvshow poster">
+                <div class="collection-info">
+                    <h2>Black Love</h2>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+           <div class="left footer-box">
+            <h2>About us</h2>
+            <div class="content">
+             <p>Warner Bros., established in 1923, is a worldwide leader in entertainment and news content creation, production, and distribution. Known for its innovation and fostering of iconic talents, the company consistently delivers captivating experiences across film, television, and interactive entertainment. Warner Bros. is committed to advancing storytelling and enriching the global entertainment landscape.</p> 
+              <div class="socials">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+              </div>
+            </div>
+           </div>
+           <div class="center footer-box">
+            <h2>Address</h2>
+            <div class="content">
+    
+              <div class="place">
+                <span><i class='bx bxs-map' ></i></span>
+                <span class="text">123 Main St, City, State, 12345</span>
+              </div>
+    
+              <div class="phone">
+                <span><i class='bx bx-phone' ></i></span>
+                <span class="text"> +1 (123) 456-7890</span>
+              </div>
+    
+              <div class="email">
+                <span><i class='bx bx-envelope' ></i></span>
+                <span class="text">info@warnerbros.com</span>
+              </div>
+    
+            </div>
+           </div>
+    
+           <div class="right footer-box">
+            <h2>Connect with us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="text" required>
+    
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+    
+                <div class="sub-btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+           </div>
+    
+    
+        </div>
+         
+      </footer>
+</body>
+</html>

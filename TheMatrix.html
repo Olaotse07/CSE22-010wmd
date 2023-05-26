@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style2.css">
+    <title>The Matrix Resurrections</title>
+    <style>
+     
+        .movie-details {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+        .movie-header {
+            flex-basis: 70%;
+        }
+        .movie-header img {
+         width: 100%;
+        object-fit: cover;
+       }
+       .movie-info {
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        font-size: 18px;  
+        border-radius: 8px;
+      }
+     .movie-stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;  /* Add this line */
+      color: #667;
+     }
+
+
+        .movie-stats span {
+         margin-right: 10px;
+         padding: 5px;
+        }
+
+        .movie-cast {
+    flex-basis: 25%;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+}
+
+.cast-member {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.cast-member img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.cast-member p {
+    margin: 0;
+}
+
+  .movie-synopsis {
+ padding: 20px;
+ background-color: #fff;
+ box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+margin-top: 20px;
+border-radius: 8px;
+
+}
+
+.movie-synopsis p{
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.watch-now {
+background-color: #e50914;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+transition: all 0.3s ease;
+border-radius: 10px;
+font-size: 0.76rem;
+    }
+
+/* This rule will only apply to the watch-now button on hover */
+.watch-now:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">
+          <img src="images/logo.png"  alt="Warner Bros logo" class="logo-image">
+        </a>
+       <!--menu-->
+       <nav>
+           <ul class="navbar">
+            <li><a href="Homepage.html" >Home</a></li>
+            <li><a href="TVShows.html">TV Shows</a></li>
+            <li><a href="Movies.html" class="home-active">Movies</a></li>
+            <li><a href="GamesandApps.html">Games and apps</a></li>
+            <li><a href="Collections.html">Collections</a></li>
+            <li><a href="Aboutus.html">About Warner Bros</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+           </ul>
+       </nav>
+    </header>
+
+    <main>
+        <section class="movie-details">
+            <div class="movie-header">
+                <img src="images/The Matrix.jpg" alt="The Matrix Resurrections movie poster">
+                <div class="movie-info">
+                    <h1>The Matrix Resurrections</h1>
+                    <div class="movie-stats">
+                        <span class="year">2023</span>
+                        <span class="duration">2h 30m</span>
+                        <span class="rating">R</span>
+                        <span class="genre">Sci-Fi</span>
+                    </div>
+                    <a href="#" class="watch-now">Watch Now</a>
+                </div>
+                <div class="movie-synopsis">
+                    <h2>Synopsis</h2>
+                    <p>"The Matrix" is a groundbreaking science fiction film released in 1999, 
+                        directed by the Wachowskis. It is set in a dystopian future where reality as perceived by most humans is actually a simulated reality called the Matrix, 
+                        created by sentient machines to subdue the human population while their bodies' heat and electrical activity are used as an energy source.
+                        Computer programmer "Neo" (Keanu Reeves) wakes up to this illusory world and is drawn into a rebellion against the machines,
+                        guided by the enigmatic Morpheus (Laurence Fishburne) and the action-driven Trinity (Carrie-Anne Moss).
+                        The story is one of self-discovery and rebellion,
+                         as Neo grapples with his newfound reality and the startling revelation of his role in it. Philosophical and existential ideas are brilliantly entwined within an action-packed plot,
+                          accentuated by stunning visual effects and innovative "bullet-time" cinematography. The film's unique blend of high-octane action, thought-provoking premise, and stylish execution has made it a classic, influencing numerous other movies and media in its wake.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="movie-cast">
+                <h2>Cast</h2>
+                <div class="cast-member">
+                    <img src="thematrixcast/Keanu Reeves.jpg" alt="Actor 1">
+                    <p>Keanu Reeves</p>
+                </div>
+                <div class="cast-member">
+                    <img src="thematrixcast/Jessica Hendwick.jpg" alt="Actor 2">
+                    <p>Jessica Henwick</p>
+                </div>
+                <div class="cast-member">
+                    <img src="thematrixcast/Jada pinkett.jpg" alt="Actor 2">
+                    <p>Jada Pinkett-Smith</p>
+                </div>
+                <!-- add more cast members as needed -->
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+           <div class="left footer-box">
+            <h2>About us</h2>
+            <div class="content">
+             <p>Warner Bros., established in 1923, is a worldwide leader in entertainment and news content creation, production, and distribution. Known for its innovation and fostering of iconic talents, the company consistently delivers captivating experiences across film, television, and interactive entertainment. Warner Bros. is committed to advancing storytelling and enriching the global entertainment landscape.</p> 
+              <div class="socials">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+              </div>
+            </div>
+           </div>
+           <div class="center footer-box">
+            <h2>Address</h2>
+            <div class="content">
+    
+              <div class="place">
+                <span><i class='bx bxs-map' ></i></span>
+                <span class="text">123 Main St, City, State, 12345</span>
+              </div>
+    
+              <div class="phone">
+                <span><i class='bx bx-phone' ></i></span>
+                <span class="text"> +1 (123) 456-7890</span>
+              </div>
+    
+              <div class="email">
+                <span><i class='bx bx-envelope' ></i></span>
+                <span class="text">info@warnerbros.com</span>
+              </div>
+    
+            </div>
+           </div>
+    
+           <div class="right footer-box">
+            <h2>Connect with us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="text" required>
+    
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+    
+                <div class="sub-btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+           </div>
+    
+    
+        </div>
+         
+      </footer>
+</body>
+</html>

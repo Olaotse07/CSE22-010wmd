@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style2.css">
+    <title>About Warner Bros</title>
+
+    <style>
+       /* Style for hero-image */
+       .hero-image {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.99)), url("your_hero_image.jpg"); 
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 2em;
+  border-top: 2px solid #fff;
+}
+
+
+.hero-text {
+  text-align: center;
+  font-size: 2em; 
+}
+
+
+.AboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+}
+
+.AboutUs img{
+    width: 30%;  
+    height:380px; 
+    margin:10px;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+   
+
+}
+
+.text-content {
+    width: 60%;
+    border: 1px solid #ccc; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px; 
+    background-color: #fff;  
+    padding: 30px;
+}
+
+
+.AboutUs h2 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+.AboutUs p {
+  margin: 0; 
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo">
+          <img src="images/logo.png" alt="Warner Bros logo" class="logo-image">
+        </a>
+        <!--menu-->
+        <nav>
+           <ul class="navbar">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="TVShows.html">TV Shows</a></li>
+            <li><a href="Movies.html" >Movies</a></li>
+            <li><a href="GamesandApps.html">Games and apps</a></li>
+            <li><a href="Collections.html">Collections</a></li>
+            <li><a href="Aboutus.html"  class="home-active">About Warner Bros</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+           </ul>
+        </nav>
+      </header>
+    
+    <main>
+    <div class = "hero-image">
+        <div class = "hero-text">
+            <h1>About Warner Bros</h1>
+        </div>
+    </div>
+    
+    <article class = "AboutUs">
+        <image src ="images/WarnerBros.jpg" alt = "Warner Bros logo"/>
+        <div class="text-content">
+        <h2>Who are we</h2>
+        <p>
+            Warner Bros. Entertainment Inc., a subsidiary of WarnerMedia, is a premier global leader in the entertainment industry. 
+            The company was founded on April 4, 1923, by brothers Harry, Albert, Sam, and Jack Warner. Over nearly a century of operation,
+            Warner Bros. has been at the forefront of the film and television industries, producing an impressive array of 
+            iconic and impactful content. The studio has been responsible for some of the most successful and beloved films
+            and television shows in the history of visual storytelling, including classics like "Casablanca," "The Wizard of Oz,
+            " the "Harry Potter" series, and the "Dark Knight" trilogy.Warner Bros. is renowned not only for its vast and diverse catalogue of feature films, 
+            television shows, and animated content, but also for its pioneering efforts in the realm of digital distribution and emerging technologies.
+            It is committed to maximizing the potential of its creative talents and providing high-quality, compelling entertainment to audiences around the globe. 
+            Beyond its film and television production, Warner Bros. has diverse business segments including home entertainment, global distribution, and interactive 
+            entertainment, offering integrated, coordinated strategies and solutions across the company.
+        </p>
+    </div>
+    </article>
+</main>
+
+    <footer>
+        <div class="footer-content">
+           <div class="left footer-box">
+            <h2>About us</h2>
+            <div class="content">
+             <p>Warner Bros., established in 1923, is a worldwide leader in entertainment and news content creation, production, and distribution. Known for its innovation and fostering of iconic talents, the company consistently delivers captivating experiences across film, television, and interactive entertainment. Warner Bros. is committed to advancing storytelling and enriching the global entertainment landscape.</p> 
+              <div class="socials">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+              </div>
+            </div>
+           </div>
+           <div class="center footer-box">
+            <h2>Address</h2>
+            <div class="content">
+    
+              <div class="place">
+                <span><i class='bx bxs-map' ></i></span>
+                <span class="text">123 Main St, City, State, 12345</span>
+              </div>
+    
+              <div class="phone">
+                <span><i class='bx bx-phone' ></i></span>
+                <span class="text"> +1 (123) 456-7890</span>
+              </div>
+    
+              <div class="email">
+                <span><i class='bx bx-envelope' ></i></span>
+                <span class="text">info@warnerbros.com</span>
+              </div>
+    
+            </div>
+           </div>
+    
+           <div class="right footer-box">
+            <h2>Connect with us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="text" required>
+    
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+    
+                <div class="sub-btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+           </div>
+    
+    
+        </div>
+         
+      </footer>
+</body>
+</html>
